@@ -1,2 +1,2 @@
 # Layout-3
-Coding and new technology about it  web page
+Coding and new technology about IT Web page
