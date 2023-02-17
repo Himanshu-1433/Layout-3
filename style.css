@@ -8,7 +8,7 @@
     --colorBlue: rgb(0, 217, 255);
     --blackTrans: rgba(0, 0, 0, 0.486);
     --brownTrans: #5c5b61be;
-    --yellowTrans: rgba(255, 255, 0, 0.623);
+    --yellowTrans: rgba(255, 255, 0, 0.524);
     --fontStyle: ;
     --redIntxt: rgba(255, 0, 0, 0.726);
 }
@@ -95,13 +95,6 @@
 
 
 
-
-
-
-
-
-
-
 .block-row-2:nth-child(1) {
     background-color: var(--yellowTrans);
 }
@@ -153,11 +146,14 @@
 .txt-box #block-txt h2 {
     color: gray;
     font-weight: 700;
+    letter-spacing: 2px;
 }
 
 .txt-box #block-txt h4 {
     color: gray;
     font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 3px;
 }
 
 .txt-box:nth-child(2) {
@@ -189,7 +185,109 @@
     font-weight: 400;
 }
 
-@media screen and (max-width: 2200px) {}
+.heading-third-part div#sub-part {
+    padding: 1rem 3rem;
+}
+
+div#sub-part #head {
+    color: var(--redIntxt);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+div#sub-part .d-flex {
+    margin-top: -20px;
+}
+
+div#sub-part .d-flex h1 {
+    font-size: 4.6rem;
+    vertical-align: top;
+    color: gray;
+    font-weight: 700;
+}
+
+div#sub-part .d-flex span {
+    margin-top: 16px;
+    color: gray;
+    font-weight: 500;
+    font-size: 1.0rem;
+}
+
+#head-2 {
+    color: gray;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.context {
+    margin: 0px 0px;
+    padding: 0rem 10rem 0rem 0rem;
+}
+
+.context p {
+    font-size: 1.1rem;
+    color: gray;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+#t-home {
+    padding: 10% 0%;
+    text-align: right;
+}
+
+#t-home h1 {
+    color: var(--colorBlue);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 5.4rem;
+}
+
+#t-home p:nth-child(2) {
+    font-size: 2rem;
+    font-weight: 800;
+    color: gray;
+    letter-spacing: 2.5px;
+}
+
+#t-home p:nth-child(4) {
+    color: gray;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+#t-home p:nth-child(5) {
+    color: gray;
+    font-size: 1rem;
+    float: right;
+    font-weight: 400;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+
+#t-home img {
+    width: 9rem;
+    height: 7rem;
+    margin: 1rem 2rem;
+}
+
+
+.heading-third-part {
+    border-bottom: 10px solid var(--redIntxt);
+}
+
+
+
+
+
+@media screen and (max-width: 2500px) {
+    #t-home img {
+        width: 10rem;
+        height: 10rem;
+    }
+}
 
 @media screen and (max-width: 1200px) {
     .learn-pro {
@@ -203,6 +301,7 @@
     .learn-pro h2 {
         font-size: 3rem;
     }
+
 }
 
 @media screen and (max-width: 998px) {
@@ -217,17 +316,72 @@
     .learn-pro h2 {
         font-size: 2rem;
     }
+
+    #lists ul {
+        font-size: 2.4rem;
+        height: 28rem;
+    }
+
+    .txt-box #block-txt h1 {
+        font-size: 4rem;
+    }
+
+    .heading-third-part div#sub-part {
+        padding: 1rem 1rem;
+    }
+
+    .txt-box #block-txt h4 {
+        font-size: 2rem;
+    }
+
+    #t-home h1 {
+        font-size: 3.4rem;
+    }
 }
 
 @media screen and (max-width: 756px) {
     #lists ul {
-        font-size: 3rem;
+        font-size: 2.7rem;
+    }
+
+    .block:nth-child(2) {
+        height: 30rem;
+    }
+
+    .context {
+        margin: 0px 0px;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+
+    div#sub-part .d-flex h1 {
+        font-size: 3.6rem;
+    }
+
+    .txt-box #block-txt {
+        padding: 1rem 1rem;
+    }
+
+    .heading-third-part {
+        border: none;
+    }
+
+    .body-third-part {
+        border-bottom: 10px solid var(--colorBlue);
     }
 }
 
 @media screen and (max-width: 557px) {
+    #lists ul {
+        font-size: 2rem;
+    }
+
     .learn-pro {
         padding: 2rem 1rem;
+    }
+
+
+    .block:nth-child(2) {
+        height: 25rem;
     }
 
     .learn-pro h1 {
@@ -238,5 +392,3 @@
         font-size: 1.4rem;
     }
 }
-
-@media screen and (max-width: 300px) {}

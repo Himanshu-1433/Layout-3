@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <title></title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Lets code</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-fluid" id="header">
+    <div class="container-fluid" id="header" data-aos="fade-up">
         <div class="row">
-            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-xm-12 block">
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-xm-12 block" data-aos="fade-up-right">
                 <div id="logo" class="d-flex position-relative">
                     <div class="Logo-line"></div>
                     <div class="logo-sign">U</div>
@@ -23,7 +25,7 @@
                     <h4>SOFTS</h4>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-xm-12 block position-relative">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-xm-12 block position-relative" data-aos="fade-up-left">
                 <div id="lists">
                     <ul>
                         <li>Java</li>
@@ -37,13 +39,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 block-row-2">
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 block-row-2" data-aos="flip-left">
                 <div class="learn-pro">
                     <h1>Learn</h1>
                     <h2>Programming</h2>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 block-row-2 d-flex justify-content-end align-items-center">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 block-row-2 d-flex justify-content-end align-items-center"
+                data-aos="flip-right">
                 <div class="address">
                     <span>:ADDRESS</span>
                     <p>main street, london, 12/b</p>
@@ -55,27 +58,67 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="zoom-in">
         <div class="row" id="sec-part">
-            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 txt-box">
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 txt-box" data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <div id="block-txt">
                     <h1 class="txt-head">#FIRST</h1>
                     <h2 class="txt-head">START IN WITH US!</h2>
                     <h4 class="txt-head">100$/ MONTH INCLUDE ONLINE COURSES</h4>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 txt-box d-flex">
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 txt-box d-flex" data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <img src="./assets/sub-part-logo.png" alt="subpart image" id="img-subpart">
                 <div class="subcontent">
                     <h2>CODED</h2>
                     <p>LOGO OF THE COMPANY</p>
+
                 </div>
+            </div>
+        </div>
+        <div class="row" id="third-part">
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 heading-third-part" data-aos="fade-left"
+                data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                <div id="sub-part">
+                    <p id="head">OUR COMPANY</p>
+                    <div class="d-flex">
+                        <h1>CODED </h1><span>CO.</span>
+                    </div>
+                    <p id="head-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="context">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic aliquam laudantium eveniet
+                            veritatis alias consequuntur officiis praesentium iste, officia sint reiciendis impedit
+                            adipisci quibusdam distinctio vel saepe sed totam. Odio?
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ullam error rerum
+                            consequuntur. Possimus, cumque, ad alias quam quo, harum odit aliquam voluptatibus molestiae
+                            sapiente cupiditate laudantium quibusdam. Nihil, recusandae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 body-third-part d-flex align-items-center justify-content-end"
+                data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                <div id="t-home">
+                    <h1>#second</h1>
+                    <p>END IT WITH US !</p>
+                    <img src="./assets/trophylogo.png" alt="trophyLogo">
+                    <p>EARN <br> YOUR REWARD</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque labore tempore facere
+                        sapiente hic deleniti obcaecati harum in,</p>
+                </div>
+
             </div>
         </div>
     </div>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
