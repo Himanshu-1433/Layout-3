@@ -9,6 +9,8 @@
     --blackTrans: rgba(0, 0, 0, 0.486);
     --brownTrans: #5c5b61be;
     --yellowTrans: rgba(255, 255, 0, 0.623);
+    --fontStyle: ;
+    --redIntxt: rgba(255, 0, 0, 0.726);
 }
 
 #header {
@@ -72,14 +74,15 @@
 #lists {
     position: relative;
     float: right;
-    padding-right: 2rem;
+    padding-right: 4rem;
     color: white;
 }
 
 #lists ul {
     direction: rtl;
+    font-weight: 900;
     margin: 0px 30px;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     list-style-type: square;
     text-align: right;
 }
@@ -138,15 +141,53 @@
     margin-left: 8px;
 }
 
+.txt-box #block-txt {
+    padding: 1rem 3rem;
+}
+
+.txt-box #block-txt h1 {
+    font-size: 6rem;
+    color: var(--redIntxt);
+}
+
+.txt-box #block-txt h2 {
+    color: gray;
+    font-weight: 700;
+}
+
+.txt-box #block-txt h4 {
+    color: gray;
+    font-weight: 600;
+}
+
+.txt-box:nth-child(2) {
+    background-color: #39bbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-box:nth-child(2) img {
+    width: 8rem;
+    height: 8rem;
+}
 
 
+.txt-box:nth-child(2) .subcontent {
+    color: white;
+    margin-top: 4.6rem;
+}
 
+.txt-box:nth-child(2) .subcontent h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
 
-
-
-
-
-
+.txt-box:nth-child(2) .subcontent p {
+    font-size: 1.6rem;
+    margin-top: -18px;
+    font-weight: 400;
+}
 
 @media screen and (max-width: 2200px) {}
 
@@ -178,7 +219,11 @@
     }
 }
 
-@media screen and (max-width: 756px) {}
+@media screen and (max-width: 756px) {
+    #lists ul {
+        font-size: 3rem;
+    }
+}
 
 @media screen and (max-width: 557px) {
     .learn-pro {
